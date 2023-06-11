@@ -29,8 +29,11 @@ in order to create ip filter on security groups.
 
 ## Start
 Start the spring boot application locally with
-```
+```shell
 mvn -Plocal spring-boot:run
 ```
-
+and open
+```shell
+http://localhost:8080/awsIpRange
+```
 

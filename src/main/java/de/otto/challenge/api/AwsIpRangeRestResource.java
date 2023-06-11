@@ -33,7 +33,7 @@ public class AwsIpRangeRestResource {
         for (final AwsIpRangeDto awsIpRangeDto : awsIpRangeDtos) {
             resultBuilder.append("Region: ").append(awsIpRangeDto.region()).append("; ");
             resultBuilder.append("IpPrefix: ").append(awsIpRangeDto.ipPrefix()).append(";");
-            resultBuilder.append(System.getProperty("line.separator"));
+            resultBuilder.append(System.lineSeparator());
         }
         return resultBuilder.toString();
     }
