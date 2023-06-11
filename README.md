@@ -26,3 +26,11 @@ in order to create ip filter on security groups.
 * There is no expectation of creating a security group in AWS
 * A pipeline in GitHub Actions is not required but would be a plus.
 * Putting the app into a docker container is not required but would be plus.
+
+## Start
+Start the spring boot application locally with
+```
+mvn -Plocal spring-boot:run
+```
+
+

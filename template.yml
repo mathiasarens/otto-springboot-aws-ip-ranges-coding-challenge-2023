@@ -10,7 +10,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: .
-      Handler: de.otto.challenge.aws.lambda.handler.AsynchronousLambdaHandler::handleRequest
+      Handler: de.otto.challenge.aws.lambda.handler.LambdaHandler::handleRequest
       Runtime: java17
       AutoPublishAlias: production
       SnapStart:
