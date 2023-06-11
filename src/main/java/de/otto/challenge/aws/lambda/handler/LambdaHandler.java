@@ -6,14 +6,14 @@ import com.amazonaws.serverless.proxy.model.AwsProxyResponse;
 import com.amazonaws.serverless.proxy.spring.SpringBootLambdaContainerHandler;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
-import jakarta.ws.rs.core.Application;
+import de.otto.challenge.OttoCodingChallengeSpringBoot3RestApiAwsIpRangeApplication;
 
 public class LambdaHandler implements RequestHandler<AwsProxyRequest, AwsProxyResponse> {
     private static SpringBootLambdaContainerHandler<AwsProxyRequest, AwsProxyResponse> handler;
 
     static {
         try {
-            handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(Application.class);
+            handler = SpringBootLambdaContainerHandler.getAwsProxyHandler(OttoCodingChallengeSpringBoot3RestApiAwsIpRangeApplication.class);
         } catch (ContainerInitializationException ex) {
             throw new RuntimeException("Unable to load spring boot application", ex);
         }
