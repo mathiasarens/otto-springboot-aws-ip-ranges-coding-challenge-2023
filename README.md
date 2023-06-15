@@ -33,7 +33,7 @@ Start the spring boot application locally with
 mvn -Plocal spring-boot:run
 ```
 and open
-```shell
+```html
 http://localhost:8080/awsIpRange
 ```
 ## AWS Lambda
