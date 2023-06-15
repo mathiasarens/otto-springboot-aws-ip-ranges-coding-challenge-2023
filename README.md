@@ -36,4 +36,9 @@ and open
 ```shell
 http://localhost:8080/awsIpRange
 ```
+## AWS Lambda
+Check out the AWS Lambda service url
+```html
+https://zfw9a8uv1m.execute-api.eu-central-1.amazonaws.com/Prod/awsIpRange
+```
 
